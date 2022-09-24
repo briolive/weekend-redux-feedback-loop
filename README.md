@@ -13,28 +13,29 @@ Additional README details can be found [here](https://github.com/PrimeAcademy/re
 
 [x] Add redux to index.js
 [x] Set up redux and redux logger
-[x] Create StepOne component
+[x] Create components & set up navigation in App.jsx
+[x] Complete StepOne component
     [x] Create a reducer for 'feeling'
     [x] Input validation
     [x] Save 'feeling' in reducer on click 'Next'
     [x] Navigate to next page on click 'Next'
-[] Create StepTwo component
-    [] Create a reducer for 'understanding'
+[] Complete StepTwo component
+    [x] Create a reducer for 'understanding'
     [] Input validation
     [] Save 'understanding' in reducer on click 'Next'
     [] Navigate to next page on click 'Next'
-[] Create StepThree component
+[] Complete StepThree component
     [] Create a reducer for 'support'
     [] Input validation
     [] Save 'support' in reducer on click 'Next'
     [] Navigate to next page on click 'Next'
-[] Create StepFour component
+[] Complete StepFour component
     [] Create a reducer for 'comments'
     [] Save 'comments' in reducer on click 'Next'
-[] Create Review component
+[] Complete Review component
     [] Display feeling, understanding, support, and comments
     [] POST to server on click 'Submit'
     [] On click 'Submit' user is taken to a submission success page
-[] Create Success component
+[] Complete Success component
     [] Add button to Leave New Feedback
     [] Leave New Feedback button resets all data and brings user back to StepOne

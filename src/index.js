@@ -17,6 +17,11 @@ const feeling = (state = 0, action) => {
 }
 
 const understanding = (state = 0, action) => {
+    if (action.type === 'SET_UNDERSTANDING') {
+        // dispatch will have type of 'SET_UNDERSTANDING'
+        // and payload with the value to set
+        return action.payload;
+    } else
     return state;
 }
 
