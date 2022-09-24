@@ -17,12 +17,12 @@ const StepOne = () => {
         dispatch({ type: 'SET_FEELING', payload: event.target.value });
     }
 
-    // Input validation
+    // Input validation & navigation
     const nextStep = () => {
         if (feeling > 1 && feeling <= 5) {
             history.push('/steptwo');
         } else {
-            alert('Rating is required to continue.')
+            alert('A rating of 1-5 is required to continue.')
         }};
 
 
