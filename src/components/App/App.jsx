@@ -3,6 +3,11 @@ import React from 'react';
 import axios from 'axios';
 import './App.css';
 import StepOne from '../StepOne/StepOne.jsx';
+import StepTwo from '../StepTwo/StepTwo.jsx';
+import StepThree from '../StepThree/StepThree.jsx';
+import StepFour from '../StepFour/StepFour.jsx';
+import Review from '../Review/Review.jsx';
+import Success from '../Success/Success.jsx';
 
 function App() {
 
@@ -15,6 +20,21 @@ function App() {
       </header>
       <Route exact path="/">
         <StepOne />
+      </Route>
+      <Route exact path="/steptwo">
+        <StepTwo />
+      </Route>
+      <Route exact path="/stepthree">
+        <StepThree />
+      </Route>
+      <Route exact path="/stepfour">
+        <StepFour />
+      </Route>
+      <Route exact path="/review">
+        <Review />
+      </Route>
+      <Route exact path="/success">
+        <Success />
       </Route>
       </Router>
     </div>
