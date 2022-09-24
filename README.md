@@ -14,10 +14,10 @@ Additional README details can be found [here](https://github.com/PrimeAcademy/re
 [x] Add redux to index.js
 [x] Set up redux and redux logger
 [x] Create StepOne component
-    [] Create a reducer for 'feeling'
-    [] Input validation
-    [] Save 'feeling' in reducer on click 'Next'
-    [] Navigate to next page on click 'Next'
+    [x] Create a reducer for 'feeling'
+    [x] Input validation
+    [x] Save 'feeling' in reducer on click 'Next'
+    [x] Navigate to next page on click 'Next'
 [] Create StepTwo component
     [] Create a reducer for 'understanding'
     [] Input validation

@@ -8,6 +8,11 @@ import { createStore, combineReducers, applyMiddleware } from 'redux';
 import { Provider } from 'react-redux';
 
 const feeling = (state = 0, action) => {
+    if (action.type === 'SET_FEELING') {
+        // dispatch will have type of 'SET_FEELING'
+        // and payload with the value to set
+        return action.payload;
+    } else 
     return state;
 }
 
