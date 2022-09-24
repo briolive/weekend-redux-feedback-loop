@@ -1,0 +1,11 @@
+import React from 'react';
+
+const StepOne = () => {
+    return (
+        <>
+        <h1>How are you feeling today?</h1>
+        </>
+    )
+}
+
+export default StepOne;
