@@ -6,6 +6,7 @@ import registerServiceWorker from './registerServiceWorker';
 import logger from 'redux-logger';
 import { createStore, combineReducers, applyMiddleware } from 'redux';
 import { Provider } from 'react-redux';
+import e from 'express';
 
 const feeling = (state = 0, action) => {
     if (action.type === 'SET_FEELING') {
@@ -26,6 +27,11 @@ const understanding = (state = 0, action) => {
 }
 
 const support = (state = 0, action) => {
+    if (action.type === 'SET_SUPPORT') {
+        // dispatch will have type of 'SET_SUPPORT'
+        // and payload with the value to set
+        return action.payload;
+    } else
     return state;
 }
 
