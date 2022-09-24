@@ -19,11 +19,11 @@ Additional README details can be found [here](https://github.com/PrimeAcademy/re
     [x] Input validation
     [x] Save 'feeling' in reducer on click 'Next'
     [x] Navigate to next page on click 'Next'
-[] Complete StepTwo component
+[x] Complete StepTwo component
     [x] Create a reducer for 'understanding'
-    [] Input validation
-    [] Save 'understanding' in reducer on click 'Next'
-    [] Navigate to next page on click 'Next'
+    [x] Input validation
+    [x] Save 'understanding' in reducer on click 'Next'
+    [x] Navigate to next page on click 'Next'
 [] Complete StepThree component
     [] Create a reducer for 'support'
     [] Input validation
