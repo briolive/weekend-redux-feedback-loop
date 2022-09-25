@@ -40,5 +40,5 @@ Additional README details can be found [here](https://github.com/PrimeAcademy/re
     [x] POST to server on click 'Submit'
     [x] On click 'Submit' reducers are cleared and user is taken to a submission success page
 [] Complete Success component
-    [] Add button to Leave New Feedback
+    [x] Add button to Leave New Feedback
     [] Leave New Feedback button resets all data and brings user back to StepOne
