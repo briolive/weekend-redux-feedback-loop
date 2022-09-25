@@ -17,13 +17,22 @@ const StepThree = () => {
         dispatch({ type: 'SET_SUPPORT', payload: event.target.value });
     }
 
+    // Input validation & navigation
+    const nextStep = () => {
+        if (support > 1 && support <= 5) {
+            history.push('/stepfour');
+        } else {
+            alert('A rating of 1-5 is required to continue.')
+        };
+    }
+
     return (
         <>
         <h1>How well are you being supported?</h1>
         <div>
             {/* Step 3: Getter & Setter */}
-            <input value={support} className="input" type="number" />
-            <button className="button">Next</button>
+            <input value={support} onChange={handleChange} className="input" type="number" />
+            <button onClick={nextStep} className="button">Next</button>
         </div>
         </>
     )

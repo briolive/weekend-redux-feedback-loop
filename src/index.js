@@ -6,7 +6,6 @@ import registerServiceWorker from './registerServiceWorker';
 import logger from 'redux-logger';
 import { createStore, combineReducers, applyMiddleware } from 'redux';
 import { Provider } from 'react-redux';
-import e from 'express';
 
 const feeling = (state = 0, action) => {
     if (action.type === 'SET_FEELING') {

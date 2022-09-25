@@ -26,8 +26,8 @@ Additional README details can be found [here](https://github.com/PrimeAcademy/re
     [x] Navigate to next page on click 'Next'
     [] Next button saves 'understanding' in reducer and moves user to next page
 [] Complete StepThree component
-    [] Create a reducer for 'support'
-    [] Input validation
+    [x] Create a reducer for 'support'
+    [x] Input validation
     [] Save 'support' in reducer on click 'Next'
     [] Navigate to next page on click 'Next'
 [] Complete StepFour component
