@@ -19,7 +19,7 @@ const StepThree = () => {
 
     // Input validation & navigation
     const nextStep = () => {
-        if (support > 1 && support <= 5) {
+        if (support > 0 && support <= 5) {
             history.push('/stepfour');
         } else {
             alert('A rating of 1-5 is required to continue.')

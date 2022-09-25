@@ -26,8 +26,6 @@ const Review = () => {
                 comments: comments,
             }
         }).then((response) => {
-            // Clear all reducers
-            dispatch({ type: 'CLEAR_ALL' });
             // Navigate to Success page
             history.push('/success');
         }).catch((error) => {

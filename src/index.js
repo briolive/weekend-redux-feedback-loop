@@ -12,7 +12,9 @@ const feeling = (state = 0, action) => {
         // dispatch will have type of 'SET_FEELING'
         // and payload with the value to set
         return action.payload;
-    } else 
+    } else if (action.type === 'CLEAR_ALL') {
+        return 0;
+    }
     return state;
 }
 
@@ -21,7 +23,9 @@ const understanding = (state = 0, action) => {
         // dispatch will have type of 'SET_UNDERSTANDING'
         // and payload with the value to set
         return action.payload;
-    } else
+    } else if (action.type === 'CLEAR_ALL') {
+        return 0;
+    }
     return state;
 }
 
@@ -30,7 +34,9 @@ const support = (state = 0, action) => {
         // dispatch will have type of 'SET_SUPPORT'
         // and payload with the value to set
         return action.payload;
-    } else
+    } else if (action.type === 'CLEAR_ALL') {
+        return 0;
+    }
     return state;
 }
 
@@ -39,7 +45,9 @@ const comments = (state = '', action) => {
         // dispatch will have type of 'SET_COMMENTS'
         // and payload with the value to set
         return action.payload;
-    } else
+    } else if (action.type === 'CLEAR_ALL') {
+        return '';
+    }
     return state;
 }
 

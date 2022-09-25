@@ -19,7 +19,7 @@ const StepOne = () => {
 
     // Input validation & navigation
     const nextStep = () => {
-        if (feeling > 1 && feeling <= 5) {
+        if (feeling > 0 && feeling <= 5) {
             history.push('/steptwo');
         } else {
             alert('A rating of 1-5 is required to continue.')
@@ -29,6 +29,7 @@ const StepOne = () => {
     return (
         <>
         <h1>How are you feeling today?</h1>
+        <p>Please rate how you are feeling today on a scale of 1 to 5.</p>
         <div>
             {/* Step 3: Getter & Setter */}
             <input value={feeling} onChange={handleChange} className="input" type="number" />

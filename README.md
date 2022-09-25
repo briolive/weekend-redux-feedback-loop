@@ -24,7 +24,6 @@ Additional README details can be found [here](https://github.com/PrimeAcademy/re
     [x] Input validation
     [x] Save 'understanding' in reducer on click 'Next'
     [x] Navigate to next page on click 'Next'
-    [] Next button saves 'understanding' in reducer and moves user to next page
 [x] Complete StepThree component
     [x] Create a reducer for 'support'
     [x] Input validation
@@ -33,12 +32,12 @@ Additional README details can be found [here](https://github.com/PrimeAcademy/re
 [x] Complete StepFour component
     [x] Create a reducer for 'comments'
     [x] Next button saves 'comments' in reducer and moves user to next page
-[] Complete Review component
+[x] Complete Review component
     [x] Display feeling, understanding, support, and comments
     [x] Set up route
     [x] Tested route in Postman
     [x] POST to server on click 'Submit'
     [x] On click 'Submit' reducers are cleared and user is taken to a submission success page
-[] Complete Success component
+[x] Complete Success component
     [x] Add button to Leave New Feedback
-    [] Leave New Feedback button resets all data and brings user back to StepOne
+    [x] Leave New Feedback button resets all data and brings user back to StepOne
