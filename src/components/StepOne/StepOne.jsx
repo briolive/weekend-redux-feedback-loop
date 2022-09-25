@@ -29,7 +29,7 @@ const StepOne = () => {
     return (
         <>
         <h1>How are you feeling today?</h1>
-        <p>Please rate how you are feeling today on a scale of 1 to 5.</p>
+        <p>Please use a scale of 1 to 5.</p>
         <div>
             {/* Step 3: Getter & Setter */}
             <input value={feeling} onChange={handleChange} className="input" type="number" />
