@@ -35,6 +35,11 @@ const support = (state = 0, action) => {
 }
 
 const comments = (state = '', action) => {
+    if (action.type === 'SET_COMMENTS') {
+        // dispatch will have type of 'SET_COMMENTS'
+        // and payload with the value to set
+        return action.payload;
+    } else
     return state;
 }
 
