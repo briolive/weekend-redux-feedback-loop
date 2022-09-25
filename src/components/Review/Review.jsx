@@ -28,6 +28,8 @@ const Review = () => {
         }).then((response) => {
             // Clear all reducers
             dispatch({ type: 'CLEAR_ALL' });
+            // Navigate to Success page
+            history.push('/success');
         }).catch((error) => {
             console.log(error);
             alert('Something went wrong!');
