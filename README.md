@@ -35,7 +35,8 @@ Additional README details can be found [here](https://github.com/PrimeAcademy/re
     [x] Next button saves 'comments' in reducer and moves user to next page
 [] Complete Review component
     [x] Display feeling, understanding, support, and comments
-    [] Set up route
+    [x] Set up route
+    [x] Tested route in Postman
     [] POST to server on click 'Submit'
     [] On click 'Submit' user is taken to a submission success page
 [] Complete Success component
