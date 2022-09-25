@@ -1,7 +1,8 @@
 import React from 'react';
 // Step 1: Imports
-import { useSelector } from 'react-redux';
+import { useSelector, useDispatch } from 'react-redux';
 import { useHistory } from 'react-router-dom';
+import axios from 'axios';
 
 const Review = () => {
     const history = useHistory();
@@ -11,6 +12,27 @@ const Review = () => {
     const understanding = useSelector(store => store.understanding);
     const support = useSelector(store => store.support);
     const comments = useSelector(store => store.comments);
+    const dispatch = useDispatch();
+
+    // Pass the data to the server
+    const handleSubmit = () => {
+        axios({
+            method: 'POST',
+            url: '/feedback',
+            data: {
+                feeling: feeling,
+                understanding: understanding,
+                support: support,
+                comments: comments,
+            }
+        }).then((response) => {
+            // Clear all reducers
+            dispatch({ type: 'CLEAR_ALL' });
+        }).catch((error) => {
+            console.log(error);
+            alert('Something went wrong!');
+        })
+    };
 
     return (
         <>
@@ -20,7 +42,7 @@ const Review = () => {
             <p>Understanding: {understanding}</p>
             <p>Support: {support}</p>
             <p>Comments: {comments}</p>
-            <button className="button">Submit</button>
+            <button onClick={handleSubmit} className="button">Submit</button>
         </div>
         </>
     )
