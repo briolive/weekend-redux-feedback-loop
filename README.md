@@ -34,7 +34,7 @@ Additional README details can be found [here](https://github.com/PrimeAcademy/re
     [x] Create a reducer for 'comments'
     [x] Next button saves 'comments' in reducer and moves user to next page
 [] Complete Review component
-    [] Display feeling, understanding, support, and comments
+    [x] Display feeling, understanding, support, and comments
     [] POST to server on click 'Submit'
     [] On click 'Submit' user is taken to a submission success page
 [] Complete Success component
