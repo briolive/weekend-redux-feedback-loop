@@ -1,6 +1,6 @@
 import React from 'react';
 // Step 1: Imports
-import { useSelector, useDispatch } from 'react-redux';
+import { useSelector } from 'react-redux';
 import { useHistory } from 'react-router-dom';
 
 const Review = () => {
